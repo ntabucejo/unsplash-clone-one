@@ -1,5 +1,12 @@
+import Layout from './components/layout'
+import Main from './components/main'
+
 const App = () => {
-  return <div className="text-green-500">App</div>
+  return (
+    <Layout>
+      <Main>section</Main>
+    </Layout>
+  )
 }
 
 export default App
