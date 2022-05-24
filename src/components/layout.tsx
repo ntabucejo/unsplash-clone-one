@@ -6,7 +6,7 @@ interface IProps {
 
 const Layout = ({ children }: IProps) => {
   return (
-    <div>
+    <div className="text-sm">
       <Header />
       {children}
     </div>

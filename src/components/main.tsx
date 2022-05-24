@@ -5,7 +5,7 @@ interface IProps {
 const Main = ({ children }: IProps) => {
   return (
     <main>
-      <div>{children}</div>
+      <div className="px-4">{children}</div>
     </main>
   )
 }

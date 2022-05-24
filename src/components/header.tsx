@@ -1,7 +1,11 @@
+import Navbar from './navbar'
+
 const Header = () => {
   return (
     <header>
-      <div></div>
+      <div className="px-4 text-neutral-500">
+        <Navbar />
+      </div>
     </header>
   )
 }
