@@ -1,4 +1,4 @@
-import { MenuIcon, MinusIcon } from '@heroicons/react/outline'
+import { MenuIcon } from '@heroicons/react/outline'
 import Button from './button'
 import Search from './search'
 
