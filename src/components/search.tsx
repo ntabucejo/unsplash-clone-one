@@ -11,11 +11,11 @@ const Search = ({ variant }: IProps) => {
 
   useEffect(() => {
     if (variant === 'navbar') {
-      setStyle('rounded-full bg-neutral-200')
+      setStyle('rounded-full py-2 bg-neutral-200')
       if (focused) {
         setStyle((value) => `${value} bg-neutral-50 ring-1 ring-neutral-400`)
       } else {
-        setStyle('rounded-full bg-neutral-200')
+        setStyle('rounded-full py-2 bg-neutral-200')
       }
     } else if (variant === 'hero') {
       setStyle('rounded-md py-4 bg-neutral-200')
@@ -26,7 +26,7 @@ const Search = ({ variant }: IProps) => {
     <div
       onFocus={() => setFocused(true)}
       onBlur={() => setFocused(false)}
-      className={` flex flex-1 items-center gap-2 px-4 py-2 ${style}`}>
+      className={` flex flex-1 items-center gap-2 px-4 ${style}`}>
       <SearchIcon className="w-5 h-5 text-neutral-600 hover:text-neutral-800 cursor-pointer" />
       <input
         type="text"
