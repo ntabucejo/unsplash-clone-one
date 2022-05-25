@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react'
 interface IProps {
   children: React.ReactNode
   variant: string
+  focused?: boolean
 }
 
-const Button = ({ children, variant }: IProps) => {
+const Button = ({ children, variant, focused = false }: IProps) => {
   const [style, setStyle] = useState<string>('')
 
   useEffect(() => {
@@ -14,6 +15,9 @@ const Button = ({ children, variant }: IProps) => {
     }
     if (variant === 'clean') {
       setStyle('px-2')
+    }
+    if (focused) {
+      setStyle('text-neutral-800')
     }
   }, [])
 
