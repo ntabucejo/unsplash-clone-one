@@ -12,8 +12,6 @@ const Card = ({ post }: IProps) => {
   const [hovered, setHovered] = useState<boolean>(false)
   const [style, setStyle] = useState<string>('')
 
-  console.log(hovered)
-
   useEffect(() => {
     if (hovered) {
       setStyle('brightness-50')
