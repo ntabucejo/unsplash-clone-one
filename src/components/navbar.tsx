@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <Button variant="normal">Submit a photo</Button>
       </div>
-      <MenuIcon className="w-6 h-6 cursor-pointer" />
+      <MenuIcon className="w-6 h-6 cursor-pointer hover:text-neutral-800" />
     </nav>
   )
 }
