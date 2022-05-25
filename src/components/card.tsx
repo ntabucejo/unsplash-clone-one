@@ -28,12 +28,12 @@ const Card = ({ post }: IProps) => {
       onMouseLeave={() => setHovered(false)}
       className="relative mb-5 w-screen sm:w-auto -ml-4 sm:ml-0">
       {hovered && (
-        <div className="absolute w-full h-full z-10 flex flex-col justify-between py-4 px-6">
+        <div className="absolute w-full h-full z-10 flex flex-col justify-between p-6">
           <div className="flex justify-end gap-4">
             <Action Icon={HeartIcon} />
             <Action Icon={PlusIcon} />
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <Profile post={post} />
             <Action Icon={ArrowDownIcon} />
           </div>
