@@ -12,11 +12,9 @@ const Button = ({ children, variant, focused = false }: IProps) => {
   useEffect(() => {
     if (variant === 'normal') {
       setStyle('border-[1px] border-neutral-300 rounded px-3 hover:border-neutral-800 py-1')
-    }
-    if (variant === 'clean') {
+    } else if (variant === 'clean') {
       setStyle(() => 'px-3 py-3')
-    }
-    if (variant === 'explorer') {
+    } else if (variant === 'explorer') {
       setStyle(() => `px-2 py-3`)
     }
     if (focused) {

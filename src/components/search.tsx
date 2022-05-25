@@ -1,15 +1,24 @@
 import { SearchIcon } from '@heroicons/react/outline'
 import { useEffect, useState } from 'react'
 
-const Search = () => {
+interface IProps {
+  variant: string
+}
+
+const Search = ({ variant }: IProps) => {
   const [focused, setFocused] = useState<boolean>(false)
   const [style, setStyle] = useState<string>('')
 
   useEffect(() => {
-    if (focused) {
-      setStyle('bg-white ring-1 ring-neutral-400')
-    } else {
-      setStyle('')
+    if (variant === 'navbar') {
+      setStyle('rounded-full')
+      if (focused) {
+        setStyle((value) => `${value} bg-neutral-50 ring-1 ring-neutral-400`)
+      } else {
+        setStyle('rounded-full')
+      }
+    } else if (variant === 'hero') {
+      setStyle('rounded-md py-4')
     }
   }, [focused])
 
@@ -17,7 +26,7 @@ const Search = () => {
     <div
       onFocus={() => setFocused(true)}
       onBlur={() => setFocused(false)}
-      className={`bg-neutral-200 flex flex-1 items-center gap-2 px-4 py-2 rounded-full ${style}`}>
+      className={`bg-neutral-200 flex flex-1 items-center gap-2 px-4 py-2  ${style}`}>
       <SearchIcon className="w-5 h-5 text-neutral-600" />
       <input
         type="text"

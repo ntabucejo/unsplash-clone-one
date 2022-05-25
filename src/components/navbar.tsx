@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="w-11 h-11">
         <img src="/src/assets/unsplash-logo.svg" alt="unsplash-logo" className="w-full h-full" />
       </div>
-      <Search />
+      <Search variant="navbar" />
       <div className="hidden md:flex gap-4 items-center">
         <div className="flex items-center">
           <Button variant="clean">Explore</Button>
