@@ -1,5 +1,6 @@
 import { MenuIcon } from '@heroicons/react/outline'
 import Button from './button'
+import Divider from './divider'
 import Search from './search'
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
           <Button variant="clean">Avertise</Button>
           <Button variant="clean">Blog</Button>
         </div>
-        <div className="w-[1px] h-8 bg-neutral-400"></div>
+        <Divider />
         <div className="flex items-center">
           <Button variant="clean">Log in</Button>
           <div className="w-[1px] h-4 bg-neutral-400 rotate-[15deg] mx-1"></div>

@@ -4,7 +4,7 @@ import Navbar from './navbar'
 const Header = () => {
   return (
     <header>
-      <div className="px-5 text-neutral-500 space-y-2">
+      <div className="px-4 text-neutral-500">
         <Navbar />
         <Explorer />
       </div>
