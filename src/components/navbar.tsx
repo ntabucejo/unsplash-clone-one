@@ -2,12 +2,13 @@ import { MenuIcon } from '@heroicons/react/outline'
 import Button from './button'
 import Divider from './divider'
 import Search from './search'
+import logo from '../assets/unsplash-logo.svg'
 
 const Navbar = () => {
   return (
     <nav className="flex items-center gap-4 py-3">
       <div className="w-11 h-11">
-        <img src="/src/assets/unsplash-logo.svg" alt="unsplash-logo" className="w-full h-full" />
+        <img src={logo} alt="unsplash-logo" className="w-full h-full" />
       </div>
       <Search variant="navbar" />
       <div className="hidden md:flex gap-4 items-center">
