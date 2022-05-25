@@ -8,7 +8,7 @@ const Explorer = () => {
         Editorial
       </Button>
       <Divider />
-      <div className="flex overflow-x-scroll scrollbar-thumb-white group-hover:scrollbar-thumb-neutral-200 scrollbar-track-white scrollbar-thin">
+      <div className="flex overflow-x-scroll scrollbar-hide">
         <Button variant="explorer">Editorial</Button>
         <Button variant="explorer">Digital Nomad</Button>
         <Button variant="explorer">Current Events</Button>
