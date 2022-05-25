@@ -12,18 +12,19 @@ const Card = ({ post }: IProps) => {
   const [hovered, setHovered] = useState<boolean>(false)
   const [style, setStyle] = useState<string>('')
 
-  useEffect(() => {
-    if (hovered) {
+  const hoverHandler = (isHovered: boolean) => {
+    setHovered(isHovered)
+    if (!hovered) {
       setStyle('brightness-50')
     } else {
       setStyle('brightness-100')
     }
-  }, [hovered])
+  }
 
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseEnter={() => hoverHandler(true)}
+      onMouseLeave={() => hoverHandler(false)}
       className="relative mb-5 w-screen sm:w-auto -ml-4 sm:ml-0">
       {hovered && (
         <div className="absolute w-full h-full z-10 flex flex-col justify-between p-6">
