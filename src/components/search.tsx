@@ -26,7 +26,7 @@ const Search = ({ variant }: IProps) => {
     <div
       onFocus={() => setFocused(true)}
       onBlur={() => setFocused(false)}
-      className={`bg-neutral-200 flex flex-1 items-center gap-2 px-4 py-2  ${style}`}>
+      className={`bg-neutral-200 flex flex-1 items-center gap-2 px-4 py-2 ${style}`}>
       <SearchIcon className="w-5 h-5 text-neutral-600 hover:text-neutral-800 cursor-pointer" />
       <input
         type="text"

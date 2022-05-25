@@ -37,7 +37,7 @@ const Card = ({ post }: IProps) => {
           </div>
         </div>
       )}
-      <img className={`w-full  ${style}`} src={post.photo} alt="" />
+      <img className={`w-full ${style}`} src={post.photo} alt="" />
     </div>
   )
 }
