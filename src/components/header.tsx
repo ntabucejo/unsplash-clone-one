@@ -1,4 +1,4 @@
-import Explorer from './Explorer'
+import Explorer from './explorer'
 import Navbar from './navbar'
 
 const Header = () => {
