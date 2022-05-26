@@ -1,6 +1,6 @@
 import Welcome from './welcome'
-import hero from '../assets/hero-background.jpg'
-import squarespace from '../assets/squarespace-logo.png'
+import hero from '../assets/images/hero-background.jpg'
+import squarespace from '../assets/images/squarespace-logo.png'
 
 const Hero = () => {
   return (

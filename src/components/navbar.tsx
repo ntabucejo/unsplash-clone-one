@@ -2,7 +2,7 @@ import { MenuIcon } from '@heroicons/react/outline'
 import Button from './button'
 import Divider from './divider'
 import Search from './search'
-import logo from '../assets/unsplash-logo.svg'
+import logo from '../assets/images/unsplash-logo.svg'
 
 const Navbar = () => {
   return (
