@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import data from '../data.json'
+import IPost from '../library/schemas/interfaces/post'
 import Card from './card'
 
 const Collection = () => {
-  const [posts] = useState(data)
+  const [posts] = useState<IPost[]>(data)
 
   return (
     <section className="grid items-center">
