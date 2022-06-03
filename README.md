@@ -1,6 +1,6 @@
 # Unsplash Clone One
 
-A fully responsive frontend [Unsplash](twitter-clone-one.ntabucejo.vercel.app/) Clone.
+A fully responsive frontend [Unsplash](twitter-clone-one.ntabucejo.vercel.app/) clone.
 
 ## Strategies 
 
