@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import posts from '../library/data/post'
-import IPost from '../library/schemas/interfaces/post'
+import posts from '../data/post'
+import IPost from '../schemas/post'
 import Card from './card'
 
 const Collection = () => {

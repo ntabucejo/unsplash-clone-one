@@ -1,7 +1,7 @@
 import { ArrowDownIcon, PlusIcon } from '@heroicons/react/outline'
 import { HeartIcon } from '@heroicons/react/solid'
 import { useState } from 'react'
-import IPost from '../library/schemas/interfaces/post'
+import IPost from '../schemas/post'
 import Action from './action'
 import Profile from './profile'
 
